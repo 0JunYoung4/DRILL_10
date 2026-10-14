@@ -51,6 +51,8 @@ class Ball:
 
     def update(self):
         self.y += random.randint(1,5)
+        if self.y >= 600:
+            self.y -= 10
     def draw(self):
         self.image.clip_draw(0, 0, 50, 50, self.x, self.y)
     
