@@ -54,7 +54,8 @@ class Ball:
         if self.y >= 600:
             self.y -= 10
     def draw(self):
-        self.image.clip_draw(0, 0, 50, 50, self.x, self.y)
+        size = random.randint(50, 70)
+        self.image.clip_draw(0, 0, size, size, self.x, self.y)
     
 def handle_events():
     global running
