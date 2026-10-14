@@ -45,7 +45,8 @@ class Zombie:
                              frame_height // 2)
 
 class Ball:
-    pass
+    def __init__(self):
+        pass
 
     
 def handle_events():
