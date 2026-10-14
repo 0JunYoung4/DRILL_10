@@ -52,7 +52,7 @@ class Ball:
     def update(self):
         self.y += random.randint(1,5)
     def draw(self):
-        self.image.clip_draw(0, 0, 100, 100, self.x, self.y)
+        self.image.clip_draw(0, 0, 50, 50, self.x, self.y)
     
 def handle_events():
     global running
