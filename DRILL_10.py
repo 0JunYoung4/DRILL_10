@@ -48,14 +48,13 @@ class Ball:
     def __init__(self):
         self.x, self.y = random.randint(100, 700), 90
         self.image = load_image('ball41x41.png')
-
+        self.size = random.randint(50, 70)   
     def update(self):
         self.y += random.randint(1,5)
         if self.y >= 600:
             self.y -= 10
     def draw(self):
-        size = random.randint(50, 70)
-        self.image.clip_draw(0, 0, size, size, self.x, self.y)
+        self.image.clip_draw(0, 0, self.size, self.size, self.x, self.y)
     
 def handle_events():
     global running
