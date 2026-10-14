@@ -44,6 +44,9 @@ class Zombie:
                              frame_width // 2,
                              frame_height // 2)
 
+class Ball:
+    pass
+
     
 def handle_events():
     global running
